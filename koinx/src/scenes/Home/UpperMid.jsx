@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ChartContainer from "../../Components/ChartContainer";
 import TrendingCoins from "../../Components/TrendingCoins";
+import SideComponent from "../../Components/SideComponent";
 
 const UpperMid = () => {
   const [bitCoin, setBitcoin] = useState({});
-
 
   const fetchData = async () => {
     const response = await fetch(
@@ -18,12 +18,11 @@ const UpperMid = () => {
     );
 
     const data = await response.json();
-   
+
     await setBitcoin(data.bitcoin);
 
     console.log(bitCoin);
   };
-
 
   useEffect(() => {
     fetchData();
@@ -46,23 +45,22 @@ const UpperMid = () => {
           <span className="font-light">BTC</span>
           <span className="ml-3 bg-gray-400 text-lg  rounded-md"> Rank #1</span>
           <div className="mt-2">
-            <span className="font-semibold text-lg">${ bitCoin.usd.toLocaleString('en-US')} </span>
-            <p className="mt-0 tex-sm font-light"> ₹{bitCoin.inr.toLocaleString('en-US')}</p>
+            <span className="font-semibold text-lg">
+              ${bitCoin?.usd?.toLocaleString("en-US")}{" "}
+            </span>
+            <p className="mt-0 tex-sm font-light">
+              {" "}
+              ₹{bitCoin?.inr?.toLocaleString("en-US")}
+            </p>
           </div>
           <hr className="my-3" />
           <span>Bitcoin Price Chart(USD)</span>
           <div className="w-[881px] h-[776px]">
-
-          <ChartContainer/>
+            <ChartContainer />
           </div>
         </div>
-        <div className="ml-4 mr-4">
-          <div className="hidden sm:block  bg-blue-700 text-white rounded-md h-96 w-80">
-            <h4 className="text-center font-bold mt-4 text-2xl p-2 px-3">
-              Get started with KoinX for FREE
-            </h4>
-          </div>
-          <TrendingCoins/>
+        <div className="hidden md:block">
+        <SideComponent />
         </div>
       </div>
     </div>

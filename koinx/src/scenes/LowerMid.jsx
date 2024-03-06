@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const LowerMid = () => {
     const navLinks=["Overview","Fundamentals","News Insights","Sentiments","Team","Technicals","Tokenomics"];
