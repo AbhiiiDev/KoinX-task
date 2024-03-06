@@ -30,7 +30,7 @@ const TrendingCoins = () => {
 
   return (
 
-     <div className="bg-white  mt-3 rounded-md p-3">
+     <div className="bg-white  mt-3 rounded-md p-3 w-[427px] h-[225px]">
             <h3 className="font-bold text-lg ">Trending coins (24h)</h3>
             <ul className="mt-4">
               {trendCoins.slice(0, 3).map((item) => (

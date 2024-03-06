@@ -18,41 +18,25 @@ const UpperMid = () => {
     );
 
     const data = await response.json();
-    await setBitcoin(data);
+   
+    await setBitcoin(data.bitcoin);
 
     console.log(bitCoin);
   };
 
-  const fetchTrendingCoings = async () => {
-    const respnonse = await fetch(
-      "https://api.coingecko.com/api/v3/search/trending",
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
-      }
-    );
-    if (respnonse.ok) {
-      const coins = await respnonse.json();
-
-      console.log(coins.coins);
-    } else throw new Error("failed to fetch trend coins");
-  };
 
   useEffect(() => {
     fetchData();
-
   }, []);
 
   return (
-    <div className="mx-10">
+    <div className="">
       <div className="mt-2">
         <span className="font-light"> Cryptocurrencies </span> &gt;&gt;
         <span className="font-semibold">Bitcoin</span>
       </div>
       <div className="flex mt-3">
-        <div className="bg-white rounded-md p-3 ">
+        <div className="bg-white rounded-md p-3 w-[881px] h-[776px] ">
           <img
             className="h-5 w-5 inline my-2"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png"
@@ -62,12 +46,15 @@ const UpperMid = () => {
           <span className="font-light">BTC</span>
           <span className="ml-3 bg-gray-400 text-lg  rounded-md"> Rank #1</span>
           <div className="mt-2">
-            <span className="font-semibold text-lg">$ 43000</span>
-            <p className="mt-0 tex-sm font-light">43,000</p>
+            <span className="font-semibold text-lg">${ bitCoin.usd.toLocaleString('en-US')} </span>
+            <p className="mt-0 tex-sm font-light"> ₹{bitCoin.inr.toLocaleString('en-US')}</p>
           </div>
           <hr className="my-3" />
           <span>Bitcoin Price Chart(USD)</span>
-          <ChartContainer />
+          <div className="w-[881px] h-[776px]">
+
+          <ChartContainer/>
+          </div>
         </div>
         <div className="ml-4 mr-4">
           <div className="hidden sm:block  bg-blue-700 text-white rounded-md h-96 w-80">

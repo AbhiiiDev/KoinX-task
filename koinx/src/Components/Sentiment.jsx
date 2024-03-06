@@ -2,7 +2,7 @@ import React from "react";
 
 const Sentiment = () => {
   return (
-    <div className="bg-white mx-10 mt-4 rounded-md p-4">
+    <div className="bg-white mt-4 rounded-md p-4 w-[881px] h-[776px]">
       <h2 className="text-2xl font-semibold">Sentiment</h2>
       <h4>Key Events</h4>
       <div className="flex gap-4">
