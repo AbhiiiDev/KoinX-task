@@ -4,7 +4,7 @@ const LowerMid = () => {
     const navLinks=["Overview","Fundamentals","News Insights","Sentiments","Team","Technicals","Tokenomics"];
 
   return (
-    <div className=' w-[881px]'>
+    <div className=' w-[881px] overflow-hidden'>
       <div className='flex gap-6 mt-3'>
     {navLinks.map((item,index)=>(
     <span className={`${index===0}? text-blue-600 :text-black`} key={index}>{item}</span>
