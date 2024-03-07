@@ -4,10 +4,10 @@ const LowerMid = () => {
     const navLinks=["Overview","Fundamentals","News Insights","Sentiments","Team","Technicals","Tokenomics"];
 
   return (
-    <div className=' w-[881px] overflow-x-scroll'>
-      <div className='flex gap-6 mt-3'>
+    <div className=' w-[881px] '>
+      <div className='flex gap-6 mt-3 overflow-x-hidden'>
     {navLinks.map((item,index)=>(
-    <span className={`${index===0}? text-blue-600 :text-black`} key={index}>{item}</span>
+  <span className={item === 'Overview' ? 'text-blue-600 cursor-pointer' : 'text-black cursor-pointer'} key={index}>{item}</span>
     ))}
       </div>
       <div className=' bg-white mt-3 rounded-md p-3'>

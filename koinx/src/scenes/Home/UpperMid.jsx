@@ -35,7 +35,7 @@ const UpperMid = () => {
         <span className="font-semibold">Bitcoin</span>
       </div>
       <div className="flex mt-3">
-        <div className="bg-white rounded-md p-3 w-[881px] h-[776px] overflow-hidden ">
+        <div className="bg-white rounded-md p-3 w-[881px] h-[711px]">
           <img
             className="h-5 w-5 inline my-2"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png"
