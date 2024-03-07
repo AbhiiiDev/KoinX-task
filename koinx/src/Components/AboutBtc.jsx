@@ -1,19 +1,19 @@
 const AboutBtc = () => {
   return (
-    <div className="bg-white p-3 mt-4 rounded-md max-w-[881px]">
+    <div className="bg-white p-3 mt-4 rounded-md max-w-[881px] ">
       <h2 className="font-bold text-xl">About Bitcoin</h2>
-      <h4 className="font-semibold text-md mt-4">What is Bitcoin ?</h4>
-      <p>
+      <h4 className="font-semibold text-[18px] text-[#0B1426] mt-4">What is Bitcoin ?</h4>
+      <p className="text-[#3E424A] text-[16px]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed
         vitae at ad blanditiis deserunt eum unde in numquam aperiam tempora
         veniam voluptates maxime molestiae corporis, soluta beatae ab. Nulla
         esse hic impedit delectus rem.
       </p>
       <hr className="my-3" />
-      <h4 className="font-semibold text-md mt-3 my-1">
+      <h4 className="font-semibold mt-3 my-1 text-[18px] text-[#0B1426]">
         Lorem ipsum dolor sit amet{" "}
       </h4>
-      <p>
+      <p className="text-[#3E424A] text-[16px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
         commodi excepturi quis sunt doloremque voluptatem impedit ab numquam
         facilis. Maiores laboriosam similique dolorem numquam doloremque modi

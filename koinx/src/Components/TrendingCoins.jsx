@@ -34,11 +34,13 @@ const TrendingCoins = () => {
       <h3 className="font-bold text-lg">Trending coins (24h)</h3>
       <ul className="mt-4">
         {trendCoins.slice(0, 3).map((item) => (
-          <div key={item?.item?.id} className="md:flex md:items-center md:justify-between">
-            <li className="flex items-center my-4">
+          <div key={item?.item?.id} className="flex">
+            <li className="flex items-center my-4 justify-around">
+              <div className='flex'>
               <img src={item.item.small} className="h-6 w-6 mr-2" alt={`${item.item.name} icon`} />
               <span className="font-semibold">{item.item.name}</span>
-              <div>
+              </div>
+              <div >
                 {item.item.data.price_change_percentage_24h.usd < 0 ? (
                   <span className="bg-red-300 rounded-md text-red-600 px-2 py-1 ml-2">
                     <i className="fas fa-arrow-down"></i>{' '}

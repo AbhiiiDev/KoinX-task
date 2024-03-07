@@ -25,11 +25,11 @@ const YouLike = () => {
   }, []);
 
   return (
-    <div className="bg-white mt-4 rounded-md w-[1440px] h-[528px] p-4 ">
+    <div className="bg-white mt-4 rounded-md h-[528px] p-4 ">
       <div>
         <h1 className="font-semibold text-2xl mt-4 mx-4">You may like</h1>
         <div className="mt-2 flex gap-2 ">
-          {trendCoins.slice(0, 5).map((item) => (
+          {trendCoins.slice(0, 6).map((item) => (
             <div key={item.item.id} className="border w-[252px] h-[160px] p-2">
               <div>
                 <div className="flex gap-2">
@@ -73,7 +73,7 @@ const YouLike = () => {
       <div>
         <h1 className="font-semibold text-2xl mt-4 mx-4">Trending Coins</h1>
         <div className="mt-2 flex gap-2 ">
-          {trendCoins.slice(6, 11).map((item) => (
+          {trendCoins.slice(6, 12).map((item) => (
             <div key={item.item.id} className="border w-[252px] h-[160px] p-2">
               <div>
                 <div className="flex gap-2">
@@ -86,7 +86,7 @@ const YouLike = () => {
                   {item.item.data.price_change_percentage_24h.usd < 0 ? (
                     <span className="bg-red-300 rounded-sm mt-1 text-red-600  h-[15px] w-[43px] text-[12px]">
                       <i className="fas fa-arrow-down"></i>{" "}
-                      {"-" +
+                      {
                         item.item.data.price_change_percentage_24h.usd.toFixed(
                           2
                         )}

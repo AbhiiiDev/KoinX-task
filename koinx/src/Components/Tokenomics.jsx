@@ -13,7 +13,7 @@ const Tokenomics = () => {
           <span>Advisors and team: 20%</span>
         </p>
       </div>
-      <p className="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus illum sunt ab ipsa! Nisi molestiae sit enim accusamus eius atque voluptatem magni unde pariatur illum molestias est dolore, placeat blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum maxime reprehenderit placeat dolores dolor fugiat eligendi voluptatem nulla, ex doloribus veritatis beatae necessitatibus at sint totam aliquid. Illo, ipsam aspernatur.</p>
+      <p className="mt-8 text-[16px] text-[#3E424A]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus illum sunt ab ipsa! Nisi molestiae sit enim accusamus eius atque voluptatem magni unde pariatur illum molestias est dolore, placeat blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum maxime reprehenderit placeat dolores dolor fugiat eligendi voluptatem nulla, ex doloribus veritatis beatae necessitatibus at sint totam aliquid. Illo, ipsam aspernatur.</p>
     </div>
   )
 }
